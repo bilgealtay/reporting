@@ -1,7 +1,8 @@
 package com.ravensoftware.reporting.transaction.resources;
 
+import com.ravensoftware.reporting.controller.TransactionResources;
 import com.ravensoftware.reporting.security.JWTAuthorizationFilter;
-import com.ravensoftware.reporting.transaction.control.TransactionControl;
+import com.ravensoftware.reporting.transaction.TransactionControl;
 import com.ravensoftware.reporting.user.control.UserDetailsServiceImpl;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,7 +17,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 /**
- * Created by bilga on 23-10-2022
+ * Created by bilga
  */
 @RunWith(SpringRunner.class)
 @WebMvcTest(TransactionResources.class)

@@ -1,4 +1,4 @@
-package com.ravensoftware.reporting.transaction.control;
+package com.ravensoftware.reporting.transaction;
 
 import com.ravensoftware.reporting.model.entity.Transaction;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 /**
- * Created by bilga on 21-02-2020
+ * Created by bilga
  */
 @Repository
 public interface TransactionRepository extends JpaRepository<Transaction, Long>, JpaSpecificationExecutor<Transaction> {

@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * Created by bilga on 22-10-2022
+ * Created by bilga
  */
 @Configuration
 public class RestTemplateConfig {

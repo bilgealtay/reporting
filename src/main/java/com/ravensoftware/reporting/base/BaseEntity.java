@@ -16,7 +16,7 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
- * Created by bilga on 20-02-2020
+ * Created by bilga
  */
 @Data
 @MappedSuperclass

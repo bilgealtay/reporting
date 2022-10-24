@@ -9,7 +9,7 @@ import javax.validation.constraints.NotBlank;
 import java.io.Serializable;
 
 /**
- * Created by bilga on 22-10-2022
+ * Created by bilga
  */
 @Data
 @NoArgsConstructor

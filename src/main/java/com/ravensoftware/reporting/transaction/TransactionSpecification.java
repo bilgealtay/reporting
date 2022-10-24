@@ -1,4 +1,4 @@
-package com.ravensoftware.reporting.transaction.control;
+package com.ravensoftware.reporting.transaction;
 
 import com.ravensoftware.reporting.base.Operation;
 import com.ravensoftware.reporting.base.PaymentMethod;
@@ -10,7 +10,7 @@ import org.springframework.data.jpa.domain.Specification;
 import java.time.LocalDate;
 
 /**
- * Created by bilga on 23-02-2020
+ * Created by bilga
  */
 public class TransactionSpecification {
 

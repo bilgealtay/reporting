@@ -1,4 +1,4 @@
-package com.ravensoftware.reporting.user.resources;
+package com.ravensoftware.reporting.controller;
 
 import com.ravensoftware.reporting.model.request.LoginRequest;
 import com.ravensoftware.reporting.model.response.LoginResponse;
@@ -13,7 +13,7 @@ import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 
 /**
- * Created by bilga on 22-10-2022
+ * Created by bilga
  */
 @RestController
 @RequiredArgsConstructor

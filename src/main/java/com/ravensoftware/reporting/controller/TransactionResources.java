@@ -1,12 +1,12 @@
-package com.ravensoftware.reporting.transaction.resources;
+package com.ravensoftware.reporting.controller;
 
 import com.ravensoftware.reporting.model.entity.CustomerInfo;
 import com.ravensoftware.reporting.model.entity.Transaction;
 import com.ravensoftware.reporting.model.response.TransactionResponse;
-import com.ravensoftware.reporting.transaction.control.TransactionControl;
-import com.ravensoftware.reporting.transaction.entity.ReportRequest;
-import com.ravensoftware.reporting.transaction.entity.ReportResponse;
-import com.ravensoftware.reporting.transaction.entity.SearchParam;
+import com.ravensoftware.reporting.transaction.TransactionControl;
+import com.ravensoftware.reporting.model.request.ReportRequest;
+import com.ravensoftware.reporting.model.response.ReportResponse;
+import com.ravensoftware.reporting.model.request.SearchParam;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 
 /**
- * Created by bilga on 21-02-2020
+ * Created by bilga
  */
 @RestController
 @RequiredArgsConstructor

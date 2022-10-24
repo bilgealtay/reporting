@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import java.util.Optional;
 
 /**
- * Created by bilga on 20-02-2020
+ * Created by bilga
  */
 @Component
 public class SpringSecurityAuditorAware implements AuditorAware<String> {

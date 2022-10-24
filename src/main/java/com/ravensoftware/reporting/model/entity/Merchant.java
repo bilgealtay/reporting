@@ -13,7 +13,7 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 
 /**
- * Created by bilga on 21-02-2020
+ * Created by bilga
  */
 @Data
 @Entity

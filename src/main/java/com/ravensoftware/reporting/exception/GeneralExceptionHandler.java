@@ -14,7 +14,7 @@ import org.springframework.web.context.request.WebRequest;
 import java.time.LocalDateTime;
 
 /**
- * Created by bilga on 22-10-2022
+ * Created by bilga
  */
 @RestControllerAdvice
 public class GeneralExceptionHandler {

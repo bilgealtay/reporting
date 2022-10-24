@@ -34,7 +34,7 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
     public Authentication attemptAuthentication(HttpServletRequest req,
                                                 HttpServletResponse res) throws AuthenticationException {
         try {
-            com.ravensoftware.reporting.user.entity.User creds = new ObjectMapper().readValue(req.getInputStream(), com.ravensoftware.reporting.user.entity.User.class);
+            com.ravensoftware.reporting.model.entity.User creds = new ObjectMapper().readValue(req.getInputStream(), com.ravensoftware.reporting.model.entity.User.class);
 
             return authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(

@@ -18,7 +18,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Created by bilga on 20-02-2020
+ * Created by bilga
  */
 @Configuration
 @EnableSwagger2

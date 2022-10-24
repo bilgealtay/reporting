@@ -5,7 +5,7 @@ import org.springframework.http.HttpStatus;
 import java.util.function.Supplier;
 
 /**
- * Created by bilga on 22-10-2022
+ * Created by bilga
  */
 public class ReportingApiException extends RuntimeException implements Supplier<ReportingApiException> {
 

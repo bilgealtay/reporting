@@ -18,7 +18,7 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 /**
- * Created by bilga on 21-02-2020
+ * Created by bilga
  */
 @Data
 @Entity

@@ -1,4 +1,4 @@
-package com.ravensoftware.reporting.transaction.entity;
+package com.ravensoftware.reporting.model.request;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 /**
- * Created by bilga on 22-10-2022
+ * Created by bilga
  */
 @Data
 public class ReportRequest implements Serializable {

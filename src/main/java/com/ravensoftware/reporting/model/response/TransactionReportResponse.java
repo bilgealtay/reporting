@@ -1,4 +1,4 @@
-package com.ravensoftware.reporting.transaction.entity;
+package com.ravensoftware.reporting.model.response;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 
 /**
- * Created by bilga on 23-02-2020
+ * Created by bilga
  */
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)

@@ -3,7 +3,7 @@ package com.ravensoftware.reporting.user.resource;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ravensoftware.reporting.model.request.LoginRequest;
 import com.ravensoftware.reporting.user.control.UserDetailsServiceImpl;
-import com.ravensoftware.reporting.user.resources.LoginResources;
+import com.ravensoftware.reporting.controller.LoginResources;
 import com.ravensoftware.reporting.user.service.LoginService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -18,7 +18,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 /**
- * Created by bilga on 23-10-2022
+ * Created by bilga
  */
 @RunWith(SpringRunner.class)
 @WebMvcTest(LoginResources.class)

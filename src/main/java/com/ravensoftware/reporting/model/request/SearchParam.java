@@ -1,4 +1,4 @@
-package com.ravensoftware.reporting.transaction.entity;
+package com.ravensoftware.reporting.model.request;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.ravensoftware.reporting.base.Operation;
@@ -10,7 +10,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 /**
- * Created by bilga on 23-02-2020
+ * Created by bilga
  */
 public class SearchParam implements Serializable {
 

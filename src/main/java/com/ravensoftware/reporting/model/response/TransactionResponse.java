@@ -8,7 +8,7 @@ import com.ravensoftware.reporting.model.entity.Transaction;
 import lombok.Data;
 
 /**
- * Created by bilga on 22-10-2022
+ * Created by bilga
  */
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)

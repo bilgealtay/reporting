@@ -1,6 +1,6 @@
-package com.ravensoftware.reporting.customer.resources;
+package com.ravensoftware.reporting.controller;
 
-import com.ravensoftware.reporting.customer.control.AcquirerControl;
+import com.ravensoftware.reporting.customer.acquirer.AcquirerControl;
 import com.ravensoftware.reporting.model.entity.Acquirer;
 import io.swagger.annotations.ApiParam;
 import lombok.RequiredArgsConstructor;
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 
 /**
- * Created by bilga on 21-02-2020
+ * Created by bilga
  */
 @RestController
 @RequiredArgsConstructor

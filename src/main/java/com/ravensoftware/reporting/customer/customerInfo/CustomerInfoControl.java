@@ -1,4 +1,4 @@
-package com.ravensoftware.reporting.customer.control;
+package com.ravensoftware.reporting.customer.customerInfo;
 
 import com.ravensoftware.reporting.model.entity.CustomerInfo;
 import org.springframework.stereotype.Component;
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import java.util.Optional;
 
 /**
- * Created by bilga on 21-02-2020
+ * Created by bilga
  */
 @Component
 public class CustomerInfoControl {

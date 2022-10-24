@@ -1,11 +1,11 @@
 package com.ravensoftware.reporting.user.control;
 
 import com.ravensoftware.reporting.config.Constants;
-import com.ravensoftware.reporting.user.entity.User;
+import com.ravensoftware.reporting.model.entity.User;
 import org.springframework.stereotype.Component;
 
 /**
- * Created by bilga on 20-02-2020
+ * Created by bilga
  */
 @Component
 public class UserControl {

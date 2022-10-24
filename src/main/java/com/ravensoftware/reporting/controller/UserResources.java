@@ -1,7 +1,7 @@
-package com.ravensoftware.reporting.user.resources;
+package com.ravensoftware.reporting.controller;
 
 import com.ravensoftware.reporting.user.control.UserControl;
-import com.ravensoftware.reporting.user.entity.User;
+import com.ravensoftware.reporting.model.entity.User;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.constraints.NotNull;
 
 /**
- * Created by bilga on 20-02-2020
+ * Created by bilga
  */
 @RestController
 @RequestMapping("/users")

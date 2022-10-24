@@ -9,7 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 /**
- * Created by bilga on 22-10-2022
+ * Created by bilga
  */
 @Service
 @RequiredArgsConstructor

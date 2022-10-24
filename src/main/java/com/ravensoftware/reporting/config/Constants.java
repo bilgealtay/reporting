@@ -1,7 +1,7 @@
 package com.ravensoftware.reporting.config;
 
 /**
- * Created by bilga on 20-02-2020
+ * Created by bilga
  */
 public final class Constants {
 

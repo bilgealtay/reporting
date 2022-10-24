@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by bilga on 22-10-2022
+ * Created by bilga
  */
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)

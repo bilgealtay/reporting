@@ -11,7 +11,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 /**
- * Created by bilga on 21-02-2020
+ * Created by bilga
  */
 @Data
 @Entity

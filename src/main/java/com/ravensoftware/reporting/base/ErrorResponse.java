@@ -11,7 +11,7 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
- * Created by bilga on 22-10-2022
+ * Created by bilga
  */
 @Data
 @NoArgsConstructor

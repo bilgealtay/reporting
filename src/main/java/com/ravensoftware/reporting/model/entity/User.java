@@ -1,4 +1,4 @@
-package com.ravensoftware.reporting.user.entity;
+package com.ravensoftware.reporting.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
@@ -11,7 +11,7 @@ import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 /**
- * Created by bilga on 20-02-2020
+ * Created by bilga
  */
 @Entity
 @Table(name = "USERS")

@@ -1,9 +1,9 @@
-package com.ravensoftware.reporting.transaction.control;
+package com.ravensoftware.reporting.transaction;
 
 import com.ravensoftware.reporting.base.Currency;
-import com.ravensoftware.reporting.customer.control.AcquirerControl;
-import com.ravensoftware.reporting.customer.control.CustomerInfoControl;
-import com.ravensoftware.reporting.customer.control.MerchantControl;
+import com.ravensoftware.reporting.customer.acquirer.AcquirerControl;
+import com.ravensoftware.reporting.customer.customerInfo.CustomerInfoControl;
+import com.ravensoftware.reporting.customer.merchant.MerchantControl;
 import com.ravensoftware.reporting.exception.ReportingApiException;
 import com.ravensoftware.reporting.model.entity.CustomerInfo;
 import com.ravensoftware.reporting.model.entity.Transaction;
@@ -11,10 +11,10 @@ import com.ravensoftware.reporting.model.enums.ReportStatus;
 import com.ravensoftware.reporting.model.response.FX;
 import com.ravensoftware.reporting.model.response.FXMerchant;
 import com.ravensoftware.reporting.model.response.TransactionResponse;
-import com.ravensoftware.reporting.transaction.entity.ReportRequest;
-import com.ravensoftware.reporting.transaction.entity.ReportResponse;
-import com.ravensoftware.reporting.transaction.entity.SearchParam;
-import com.ravensoftware.reporting.transaction.entity.TransactionReportResponse;
+import com.ravensoftware.reporting.model.request.ReportRequest;
+import com.ravensoftware.reporting.model.response.ReportResponse;
+import com.ravensoftware.reporting.model.request.SearchParam;
+import com.ravensoftware.reporting.model.response.TransactionReportResponse;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
@@ -27,7 +27,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 /**
- * Created by bilga on 21-02-2020
+ * Created by bilga
  */
 @Component
 public class TransactionControl {
