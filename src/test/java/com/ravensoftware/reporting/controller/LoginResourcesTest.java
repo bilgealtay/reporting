@@ -1,9 +1,8 @@
-package com.ravensoftware.reporting.user.resource;
+package com.ravensoftware.reporting.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ravensoftware.reporting.model.request.LoginRequest;
 import com.ravensoftware.reporting.user.control.UserDetailsServiceImpl;
-import com.ravensoftware.reporting.controller.LoginResources;
 import com.ravensoftware.reporting.user.service.LoginService;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -6,7 +6,7 @@ For building and running the application you need:
 - [Maven 3]
 
 ** Project based on Spring Boot and RestAPI. Project has a docker file and can be dockerized.
-Project build on Heroku and can be reached
+Project deployed on Heroku but is not reachable right now. working on it
     https://raven-reporting.herokuapp.com/
 
 

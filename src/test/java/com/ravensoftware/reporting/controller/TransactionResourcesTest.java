@@ -1,6 +1,5 @@
-package com.ravensoftware.reporting.transaction.resources;
+package com.ravensoftware.reporting.controller;
 
-import com.ravensoftware.reporting.controller.TransactionResources;
 import com.ravensoftware.reporting.security.JWTAuthorizationFilter;
 import com.ravensoftware.reporting.transaction.TransactionControl;
 import com.ravensoftware.reporting.user.control.UserDetailsServiceImpl;
