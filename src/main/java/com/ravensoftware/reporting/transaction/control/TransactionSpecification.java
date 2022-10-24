@@ -2,9 +2,9 @@ package com.ravensoftware.reporting.transaction.control;
 
 import com.ravensoftware.reporting.base.Operation;
 import com.ravensoftware.reporting.base.PaymentMethod;
-import com.ravensoftware.reporting.transaction.entity.ErrorCode;
-import com.ravensoftware.reporting.transaction.entity.Transaction;
-import com.ravensoftware.reporting.transaction.entity.TransactionStatus;
+import com.ravensoftware.reporting.model.enums.ErrorCode;
+import com.ravensoftware.reporting.model.entity.Transaction;
+import com.ravensoftware.reporting.model.enums.TransactionStatus;
 import org.springframework.data.jpa.domain.Specification;
 
 import java.time.LocalDate;
@@ -15,7 +15,15 @@ import java.time.LocalDate;
 public class TransactionSpecification {
 
     public static Specification<Transaction> fromTo(LocalDate from, LocalDate to) {
-        return (Specification<Transaction>) (root, criteriaQuery, criteriaBuilder) -> criteriaBuilder.between(root.get("txDate"), from, to);
+        return (Specification<Transaction>) (root, criteriaQuery, criteriaBuilder) -> criteriaBuilder.between(root.get("transactionDate"), from, to);
+    }
+
+    public static Specification<Transaction> fromDate(LocalDate from) {
+        return (Specification<Transaction>) (root, criteriaQuery, criteriaBuilder) -> criteriaBuilder.greaterThan(root.get("transactionDate"), from);
+    }
+
+    public static Specification<Transaction> toDate(LocalDate to) {
+        return (Specification<Transaction>) (root, criteriaQuery, criteriaBuilder) -> criteriaBuilder.lessThan(root.get("transactionDate"), to);
     }
 
     public static Specification<Transaction> merchant(Long id) {

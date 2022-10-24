@@ -3,6 +3,8 @@ package com.ravensoftware.reporting.transaction.entity;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.ravensoftware.reporting.base.Operation;
 import com.ravensoftware.reporting.base.PaymentMethod;
+import com.ravensoftware.reporting.model.enums.ErrorCode;
+import com.ravensoftware.reporting.model.enums.TransactionStatus;
 
 import java.io.Serializable;
 import java.time.LocalDate;

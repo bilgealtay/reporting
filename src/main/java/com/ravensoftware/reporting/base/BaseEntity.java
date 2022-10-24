@@ -1,5 +1,10 @@
 package com.ravensoftware.reporting.base;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
+import lombok.Data;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
@@ -8,14 +13,17 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 /**
  * Created by bilga on 20-02-2020
  */
+@Data
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
 public abstract class BaseEntity implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     @Version
     private Long version;
@@ -28,65 +36,23 @@ public abstract class BaseEntity implements Serializable {
     @Column(name = "CREATED_BY", nullable = false, length = 50, updatable = false)
     private String createdBy;
 
+    @JsonProperty("created_at")
+    @JsonSerialize(using = LocalDateTimeSerializer.class)
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @CreatedDate
     @Column(name = "CREATED_DATE", updatable = false)
-    private LocalDate createdDate = LocalDate.now();
+    private LocalDateTime createdDate = LocalDateTime.now();
 
     @LastModifiedBy
     @Column(name = "LAST_MODIFIED_BY", length = 50)
     private String lastModifiedBy;
 
+    @JsonProperty("updated_at")
+    @JsonSerialize(using = LocalDateTimeSerializer.class)
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @LastModifiedDate
     @Column(name = "LAST_MODIFIED_DATE")
-    private LocalDate lastModifiedDate = LocalDate.now();
+    private LocalDateTime lastModifiedDate = LocalDateTime.now();
 
-
-    public Long getVersion() {
-        return version;
-    }
-
-    public void setVersion(Long version) {
-        this.version = version;
-    }
-
-    public Status getStatus() {
-        return status;
-    }
-
-    public void setStatus(Status status) {
-        this.status = status;
-    }
-
-    public String getCreatedBy() {
-        return createdBy;
-    }
-
-    public void setCreatedBy(String createdBy) {
-        this.createdBy = createdBy;
-    }
-
-    public LocalDate getCreatedDate() {
-        return createdDate;
-    }
-
-    public void setCreatedDate(LocalDate createdDate) {
-        this.createdDate = createdDate;
-    }
-
-    public String getLastModifiedBy() {
-        return lastModifiedBy;
-    }
-
-    public void setLastModifiedBy(String lastModifiedBy) {
-        this.lastModifiedBy = lastModifiedBy;
-    }
-
-    public LocalDate getLastModifiedDate() {
-        return lastModifiedDate;
-    }
-
-    public void setLastModifiedDate(LocalDate lastModifiedDate) {
-        this.lastModifiedDate = lastModifiedDate;
-    }
 }
 

@@ -1,11 +1,13 @@
 package com.ravensoftware.reporting.transaction.control;
 
-import com.ravensoftware.reporting.contact.entity.CustomerInfo;
-import com.ravensoftware.reporting.transaction.entity.Transaction;
+import com.ravensoftware.reporting.model.entity.Transaction;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
+
+import java.util.Optional;
 
 /**
  * Created by bilga on 21-02-2020
@@ -13,6 +15,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface TransactionRepository extends JpaRepository<Transaction, Long>, JpaSpecificationExecutor<Transaction> {
 
-    @Query("SELECT c.customerInfo FROM Transaction c WHERE c.id=:id")
-    CustomerInfo getCustomerInfo(Long id);
+    @Query("SELECT e FROM Transaction e INNER JOIN FETCH e.customerInfo WHERE e.id = :id")
+    Optional<Transaction> findByIdFetchCustomerInfo(@Param("id") Long id);
 }
